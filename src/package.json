@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "art-template": "^4.12.2",
+    "gulp-sass": "^4.0.1"
+  }
+}

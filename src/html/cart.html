@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/cart.css">
+    <link rel="stylesheet" type="text/css" href="/css/include/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="header_top_container">
+        <div class="header_top">
+            <div class="header_top_left">
+                <ul>
+                    <li>
+                        <a href="#">首页</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="#">平台政策</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="#">商家入驻</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_top_right">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="#">下载必要APP</a>
+                        <span>|</span>
+                        <div class="down_App">
+                            <img src="/images/triangle.png" class="img">
+                            <div>
+                                <dl>
+                                    <dt>
+                                                <img src="/images/appLogo.png" alt="">
+                                                <p>买大牌制造商产品上必要</p>
+                                            </dt>
+                                    <dd>
+                                        <img src="/images/wxCode.jpg" alt="">
+                                    </dd>
+                                </dl>
+
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">消息中心&nbsp;&nbsp;&nbsp;<i>0</i></a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="#">客户服务</a>
+                        <div class="customer_service">
+                            <div>
+                                <a href="#">我的客服</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">购物车&nbsp;&nbsp;<i class="totalAmount">0</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header_bottom">
+        <div class="header_bottom_top">
+            <div class="logo">
+                <img src="/images/logo.png">
+                <h1>必要 biyao.com</h1>
+            </div>
+            <p>
+                欢迎来到必要，请<a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="cart_container">
+        <div class="cart_empty">
+            <p><img src="/images/cart.png" alt=""> 您的购物车还是空的，
+                <a href="#">登录</a>后，将显示您之前加入的商品</p>
+            <button>马上购物</button>
+        </div>
+
+        <div class="cart_list">
+            <h3>购物车</h3>
+            <div class=" cart_table_head ">
+                <ul>
+                    <li><input type="checkbox" class="ck_all ck_all2">全选</li>
+                    <li>商品信息</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>小计</li>
+                    <li>操作</li>
+
+                </ul>
+            </div>
+
+            <div class="cart_table_body">
+
+            </div>
+
+            <script type="text/html" id="cart_temp">
+                {{each products curr}}
+                <span data-id="{{curr.id}}" class="detail_group">
+                <h4>
+                        <input type="checkbox" class="ck_prod ck_prodh4 ck_prod2">&nbsp;&nbsp;商家：<span>{{curr.title}}</span>
+                </h4>
+                <ul class="detail_ul">
+                    <li><input type="checkbox" class="ck_prod ck_prod2 ck_prod1"></li>
+                    <li><img src="{{curr.img}}" alt=""></li>
+                    <li>
+                        <p><span>{{curr.title}}</span><br>颜色：黑色<br>尺寸：20</p>
+                    </li>
+                    <li>￥{{curr.price}}</li>
+                    <li><button class="decrement">-</button><input type="text" value="{{curr.amount}}" class="cart_amount"><button class="increment">+</button></li>
+                    <li>￥<span class="sub">{{(curr.price*curr.amount).toFixed(2)}}</span></li>
+                    <li class="del"><img src="/images/cls_btn.png" alt=""></li>
+                </ul>
+                </span>
+                {{/each}}
+            </script>
+
+            <div class="cart_table_foot">
+                <ul>
+                    <li><input type="checkbox" class="ck_all ck_all1"></li>
+                    <li>全选</li>
+                    <li>删除</li>
+                    <li>商品总数<span class="totalAmount">3</span>件</li>
+                    <li>商品总价：<span>￥339</span></li>
+                </ul>
+            </div>
+            <div class="cart_h5">
+                <h5><button>继续购物</button><span>合计：￥<i class="cart_sum">0</i><button>结算</button></span></h5>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/cart.js"></script>
+</body>
+
+</html>6

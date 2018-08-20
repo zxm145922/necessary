@@ -5,9 +5,28 @@
 码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
 无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
 
-#### 软件架构
-软件架构说明
+#### 项目介绍
+PC电商项目
 
+#### 页面
+
+1. 注册
+2. 登录
+3. 首页
+4. 列表
+5. 详情
+6. 购物车
+7. 结算
+
+#### 技术
+
+1. HTML+CSS/HTML5+CSS3
+2. JavaScript
+3. jQuery + 插件
+4. SASS(*.scss)
+5. RequireJS
+6. Git
+7. Gulp
 
 #### 安装教程
 

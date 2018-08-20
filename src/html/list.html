@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/list.css">
+    <link rel="stylesheet" type="text/css" href="/css/include/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/include/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <div class="list_container">
+        <div class="list_header">
+            <h4>首页&nbsp;&gt;&nbsp;箱包出行<span>&nbsp;&gt;&nbsp;功能箱包</span></h4>
+            <p>
+                <span>
+                        功能箱包：
+                    </span>
+                <span>
+                        拉杆箱
+                    </span>
+                <span>
+                        休闲/功能包
+                    </span>
+                <span>
+                        妈咪包
+                    </span>
+            </p>
+        </div>
+        <div class="list_container_main">
+
+        </div>
+        <script type="text/html" id="list_main">
+            <h3>拉杆箱</h3>
+            <ul>
+                {{each list_container curr index}}
+
+                <li>
+                    <a href="/html/detail.html?id={{curr.id}}">
+                        <div class="id" style="display: none;">{{curr.id}}</div>
+                        <img src="{{curr.img}}">
+                        <p> {{curr.name}}<br>
+                            <span>￥{{curr.price}}</span>
+                        </p>
+                    </a>
+                </li>
+
+                {{/each}}
+            </ul>
+
+
+            <h3>休闲/功能包</h3>
+            <ul>
+                {{each list_container curr index}}
+
+                <li>
+                    <a href="/html/detail.tml?id={{curr.id}}">
+                        <div class="id" style="display: none;">{{curr.id}}</div>
+                        <img src="{{curr.img}}">
+                        <p> {{curr.name}}<br>
+                            <span>￥{{curr.price}}</span>
+                        </p>
+                    </a>
+                </li>
+
+                {{/each}}
+            </ul>
+            <h3>妈咪包</h3>
+            <ul>
+                {{each list_container curr index}}
+
+                <li>
+                    <a href="/html/detail.html?id={{curr.id}}">
+                        <div class="id" style="display: none;">{{curr.id}}</div>
+                        <img src="{{curr.img}}">
+                        <p> {{curr.name}}<br>
+                            <span>￥{{curr.price}}</span>
+                        </p>
+                    </a>
+                </li>
+
+                {{/each}}
+            </ul>
+        </script>
+    </div>
+    <footer></footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/list.js"></script>
+
+</body>
+
+</html>

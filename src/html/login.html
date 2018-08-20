@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/include/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="header_bottom">
+        <div class="header_bottom_top">
+            <div class="logo">
+                <img src="/images/logo.png">
+                <h1>必要 biyao.com</h1>
+            </div>
+            <p>
+                欢迎来到必要，请<a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a>
+            </p>
+        </div>
+    </div>
+    <div class="login_container">
+        <h4><span></span>用户登录
+            <p><a href="#">短信登录</a>&nbsp;&nbsp;<a href="#">密码登录</a></p>
+        </h4>
+        <form class="form_login" onsubmit="return false;">
+            <input type="text" placeholder="请输入手机号" name="phone">
+            <input type="text" placeholder="请输入6-32位登录密码" name="password">
+            <div class="register_checkbox">
+                <input type="checkbox">
+                <p>下次自动登录<span><a href="#">忘记密码</a></span></p>
+            </div>
+            <button>登录</button>
+            <h5>
+                <span>第三方账号登录：&nbsp;&nbsp;&nbsp;</span>
+                <a href="#"><img src="/images/weix.jpg" alt=""></a>
+                <a href="#"><img src="/images/qq.jpg" alt=""></a>
+            </h5>
+            <i><img src="/images/tan.png" alt="">必要不会以任何理由要求您转账汇款，谨防诈骗。</i>
+        </form>
+    </div>
+    <footer></footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/login.js"></script>
+</body>
+
+</html>

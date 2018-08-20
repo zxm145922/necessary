@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/detail.css">
+    <link rel="stylesheet" type="text/css" href="/css/include/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/include/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <div class="detail_container">
+
+    </div>
+    <script type="text/html" id="detail_template">
+        {{each detail curr index}}
+        <div class="detail_container_head">
+            <div class="id" style="display: none;">{{curr.id}}</div>
+            <h4>首页&gt;<i class="title">{{curr.title}}</i></h4>
+            <div class="detail_container_head_left">
+                <div class="magnifying">
+                    <div class="small_box">
+                        <span class="mask"></span>
+                        <span class="float_layer"></span>
+                        <img src="{{curr.img1}}" data-zoom-image="{{curr.img1}}" class="detail_img">
+                    </div>
+                    <div class="big_box">
+                        <img src="{{curr.img1}}" data-zoom-image="{{curr.img1}}" class="detail_img">
+                    </div>
+                    <div class="small_img">
+                        <img src="{{curr.img1}}" alt="" class="special"></a>
+                        <img src="{{curr.img2}}" alt="">
+                        <img src="{{curr.img3}}" alt="">
+                        <img src="{{curr.img4}}" alt="">
+                        <img src="{{curr.img5}}" alt="">
+                    </div>
+
+                </div>
+                <ul>
+                    <li>7天无忧退货</li>
+                    <li>先行赔付</li>
+                    <li>超时赔偿</li>
+                    <li>全场包邮</li>
+                </ul>
+            </div>
+            <div class="detail_container_head_right">
+                <div class="detail_container_head_right_top">
+                    <p>
+                        {{curr.title1}}
+                    </p>
+                    <span>
+                            {{curr.title2}}
+                </span>
+                    <br>
+                    <i>
+                            {{curr.special}}
+                </i>
+                </div>
+                <div class="detail_container_head_right_bottom">
+                    <ul>
+                        <li><span>售价</span><b>￥<i class="price">{{curr.price}}</i></b>生产周期：7天</li>
+                        <li>
+                            <span>颜色</span>
+                            <ul class="inner_ul">
+                                <li class="special_style"><img src="{{curr.img1}}" class="cart_img">
+                                    <em></em>
+                                </li>
+                                <li>
+                                    <img src="{{curr.img2}}">
+                                    <em></em>
+                                </li>
+                                <li>
+                                    <img src="{{curr.img3}}">
+                                    <em></em>
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li>
+                            <span>尺寸</span>
+                            <ul class="detail_size">
+                                <li class="special_style">
+                                    <p>200*150cm</p>
+                                    <em></em>
+                                </li>
+                                <li>
+                                    <p>200*230cm</p>
+                                    <em></em>
+                                </li>
+                            </ul>
+
+
+                        </li>
+                        <li>
+                            <span>数量</span>
+                            <b>-<input type="text" class="amount" value="1">+</b>
+                        </li>
+                        <li>
+                            <button>立即购买</button>
+                            <i><button class="add_cart">加入购物车</button></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="detail_container_detail">
+            <h4>商品详情</h4>
+            <img src="{{curr.img1}}" alt="">
+            <p>{{curr.detail}}</p>
+            <img src="{{curr.img2}}" alt="">
+            <p>{{curr.detail}}</p>
+            <img src="{{curr.img3}}" alt="">
+            <p>{{curr.detail}}</p>
+        </div>
+        {{/each}}
+    </script>
+    <footer></footer>
+
+    <script src="/lib/requirejs/require.js" data-main="/js/detail.js"></script>
+</body>
+
+</html>

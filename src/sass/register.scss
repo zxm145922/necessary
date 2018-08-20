@@ -1,0 +1,113 @@
+.header_bottom {
+    width: 100%;
+    height: 98px;
+    box-shadow: 0 3px 3px #f0f0f0;
+    margin-bottom: 3px;
+    .header_bottom_top {
+        padding-left: 30px;
+        height: 98px;
+        width: 1080px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 8;
+        .logo {
+            float: left;
+            margin-top: 24px;
+            width: 271px;
+            h1 {
+                display: none;
+            }
+        }
+        p {
+            width: 200px;
+            line-height: 98px;
+            color: #8c8292;
+            float: right;
+            font-size: 12px;
+            a {
+                color: #8c8292;
+            }
+        }
+    }
+}
+
+.register_container {
+    width: 450px;
+    height: 530px;
+    margin: 0 auto;
+    h4 {
+        line-height: 48px;
+        font-size: 20px;
+        color: #52367b;
+        font-weight: 200px;
+        span {
+            margin-top: 11px;
+            margin-right: 8px;
+            margin-left: 4px;
+            float: left;
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: url(/images/sprit_biyao.png) no-repeat 1px -520px;
+        }
+    }
+    input {
+        padding-left: 20px;
+        width: 380px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: #c8c8c8;
+    }
+    .register_checkbox {
+        height: 40px;
+        input {
+            float: left;
+            width: 15px;
+            height: 15px;
+        }
+        p {
+            color: #8a8a8a;
+            span {
+                color: #07a6df;
+            }
+            line-height: 10px;
+            line-height: 20px;
+        }
+    }
+    .register_button {
+        height: 40px;
+        input {
+            width: 130px;
+            height: 34px;
+            float: left;
+        }
+        button {
+            font-size: 14px;
+            float: left;
+            width: 110px;
+            height: 40px;
+            background: #724a88;
+            margin: 0;
+        }
+        img {
+            margin-bottom: 20px;
+            width: 100px;
+            margin-right: 18px;
+            margin-left: 18px;
+            height: 40px;
+            float: left;
+        }
+    }
+    button {
+        margin-top: 10px;
+        width: 400px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 19px;
+        color: white;
+        background: #f49f26;
+        border: none;
+    }
+}
